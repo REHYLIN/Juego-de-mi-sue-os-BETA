@@ -2,7 +2,7 @@ import pygame, sys
 
 pygame.init()
 
-ANCHO, ALTO = 800, 600
+ANCHO, ALTO = 1200, 640
 PISO_Y = 480
 
 pantalla = pygame.display.set_mode((ANCHO, ALTO))
@@ -45,7 +45,7 @@ class Jugador:
 
         self.rect = self.image.get_rect(midbottom=(ANCHO // 2, PISO_Y))
 
-        self.velocidad = 5
+        self.velocidad = 4
         self.vel_y = 0
         self.gravedad = 1
         self.salto = -18

@@ -567,7 +567,7 @@ class Puerta:
         self.cooldown = 500
         self.fuente_pequena = pygame.font.Font(None, 18)
         self.fuente_normal = pygame.font.Font(None, 20)
-        
+
     def update(self):
         self.tiempo += 0.15
         self.pulsacion = abs(math.sin(self.tiempo)) * 0.6 + 0.9
